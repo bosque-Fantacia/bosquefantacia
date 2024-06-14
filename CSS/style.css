@@ -1,0 +1,126 @@
+body {
+    background-image: url('../img/bosque2.png');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú estilo bootstrap */
+.navbar {
+    background-color: #004d40; /* Color verde oscuro para el menú */
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+    background-color: #004d40;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 6px 0;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #66bb6a;
+}
+
+@media (max-width: 670px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-collapse.show {
+        display: flex;
+    }
+    .nav-item {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Contenido */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.text-div, .image-div {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-div {
+    flex: 1 1 calc(50% - 4rem); /* 50% width with margins */
+}
+
+.image-div {
+    flex: 1 1 calc(50% - 2rem); /* 50% width with margins */
+    text-align: center;
+    max-width: 400px; /* Ajuste del tamaño máximo de .image-div */
+    margin-bottom: 2rem; /* Separación entre elementos */
+}
+
+.image-div img {
+    width: 100%; /* Ajuste para asegurar que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 100%; /* Máximo ancho de imagen */
+    max-height: 100%; /* Máximo alto de imagen */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+@media (max-width: 670px) {
+    .text-div, .image-div {
+        flex: 1 1 calc(100% - 2rem); /* 100% width with margins */
+    }
+}

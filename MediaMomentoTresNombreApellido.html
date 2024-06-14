@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Momento Tres - [Nombre] [Apellido]</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Menú -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="fantastico.html">Bosque Encantado</a>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="BootstrapMomentoTresNombreApellido.html">BoostrapM1</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="text-div">
+            <p>El bosque encantado está lleno de misterios y aventuras.</p>
+        </div>
+        <div class="text-div">
+            <p>Explora sus rincones y descubre sus secretos ocultos.</p>
+        </div>
+        <div class="image-div">
+            <img src="img/arbolf1.png" alt="Bosque Imagen 1">
+        </div>
+        <div class="image-div">
+            <img src="img/arbolf2.png" alt="Bosque Imagen 2">
+        </div>
+        <div class="image-div">
+            <img src="img/arbolf3.png" alt="Bosque Imagen 3">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function() {
+            document.querySelector('.navbar-collapse').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

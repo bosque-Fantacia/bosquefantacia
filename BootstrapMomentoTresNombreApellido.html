@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Color de fondo representando un cielo claro */
+        }
+        .navbar {
+            background-color: #004d40; /* Color verde oscuro para el navbar */
+        }
+        .card {
+            background-color: #a5d6a7; /* Color verde claro para las tarjetas */
+        }
+        .accordion-button {
+            background-color: #2e7d32; /* Color verde intenso para los botones del accordion */
+            color: white;
+        }
+        .accordion-body {
+            background-color: #66bb6a; /* Color verde medio para el cuerpo del accordion */
+        }
+        .btn-primary {
+            background-color: #00796b; /* Color verde azulado para el botón */
+            border-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="fantastico.html">Bosque Encantado</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="MediaMomentoTresNombreApellido.html">CSSM2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <!-- Tarjetas -->
+        <div class="card-deck">
+            <div class="card">
+                <img src="img/arbolf1.png" class="card-img-top" alt="Bosque 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sauce Encantado</h5>
+                    <p class="card-text">En este primer arbbol fantastico lo avitan adas y jops.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/arbolf2.png" class="card-img-top" alt="Bosque 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cedro Centenario</h5>
+                    <p class="card-text">En el segun arbol se deve de temer ya qeu se puede enconrtar balboy y screm shadow.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/arbolf3.png" class="card-img-top" alt="Bosque 3">
+                <div class="card-body">
+                    <h5 class="card-title">Roble Estelar</h5>
+                    <p class="card-text">En este tipo de arbol fantastico no se sabe mucho pero sabemos que es muy extraña y sus frutas pueden llevar a otras realidades.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="mt-5">
+            <h2>Formulario de Contacto del Bosque</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre frantastico">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo de otro mundo">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Ingresa tu Imaginacion"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Imaginacion</button>
+            </form>
+        </div>
+
+      <!-- Accordion -->
+<div class="accordion mt-5" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Árboles Mágicos
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body accordion-body">
+                <div>
+                    <h5>Cedro Centenario:</h5>
+                    <p>En lo profundo del bosque, se alza majestuoso el Cedro Centenario, cuyas raíces entrelazadas cuentan historias ancestrales susurradas por el viento. Sus ramas, adornadas con musgo plateado y hojas resplandecientes, parecen tocar el cielo estrellado. Bajo su sombra, se encuentra un santuario de paz donde los viajeros encuentran consuelo y sabiduría.</p>
+                </div>
+                <div>
+                    <h5>Roble Estelar:</h5>
+                    <p>Entre los árboles del firmamento, destaca el Roble Estelar, cuyas ramas se extienden como brazos abiertos hacia el cosmos. Sus hojas brillan con la luz de las estrellas, y en las noches claras, su tronco parece fundirse con la Vía Láctea. Se dice que este árbol es un portal a otros mundos, donde los sueños se entrelazan con la realidad y los secretos del universo son revelados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Criaturas Fantásticas
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body accordion-body">
+                <div>
+                    <h5>Criaturas Buenas:</h5>
+                    <ul>
+                        <li><strong>Hada del Cedro:</strong> Pequeñas y delicadas hadas que protegen el Cedro Centenario. Brillan con una luz verde suave y poseen el don de sanar tanto el cuerpo como el alma.</li>
+                        <li><strong>Guardianes de las Estrellas:</strong> Espíritus benevolentes que cuidan el Roble Estelar. Tienen forma de ciervos con cuernos luminosos y su presencia brinda paz y armonía a todo el bosque.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Criaturas Malas:</h5>
+                    <ul>
+                        <li><strong>Sombras de la Noche:</strong> Entidades oscuras que se ocultan en las ramas más altas del Cedro Centenario. Siembran pesadillas y desconfianza en aquellos que se aventuran demasiado cerca de su hogar.</li>
+                        <li><strong>Voraces Devoradores de Luz:</strong> Monstruos que acechan en las profundidades del Roble Estelar, alimentándose de la energía de las estrellas. Su presencia corrompe la magia del bosque y oscurece el brillo celestial.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Accordion -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

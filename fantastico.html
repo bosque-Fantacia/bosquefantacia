@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página para un Fondo Fantástico - [Nombre] [Apellido]</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('img/bosque.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 2rem;
+        }
+        .btn-custom {
+            font-size: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .btn-blue {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+        .btn-green {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        @media (max-width: 670px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .btn-custom {
+                font-size: 1.25rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .btn-custom {
+                font-size: 1rem;
+                padding: 0.5rem 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Página para un Fondo Fantástico</h1>
+        <a href="BootstrapMomentoTresNombreApellido.html" class="btn btn-custom btn-blue">Bootstrap</a>
+        <a href="MediaMomentoTresNombreApellido.html" class="btn btn-custom btn-green">CSS Media</a>
+    </div>
+</body>
+</html>
